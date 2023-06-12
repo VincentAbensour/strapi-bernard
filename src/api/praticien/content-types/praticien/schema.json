@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "praticiens",
+  "info": {
+    "singularName": "praticien",
+    "pluralName": "praticiens",
+    "displayName": "praticien",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string",
+      "required": true
+    },
+    "photo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "horaire": {
+      "type": "text"
+    },
+    "prise_en_charges": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::prise-en-charge.prise-en-charge",
+      "mappedBy": "praticiens"
+    }
+  }
+}
