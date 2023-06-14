@@ -17,11 +17,12 @@
       "required": true
     },
     "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "description": {
       "type": "text"
@@ -34,6 +35,12 @@
       "relation": "manyToMany",
       "target": "api::prise-en-charge.prise-en-charge",
       "mappedBy": "praticiens"
+    },
+    "email": {
+      "type": "email"
+    },
+    "telephone": {
+      "type": "string"
     }
   }
 }
