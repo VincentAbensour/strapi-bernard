@@ -41,6 +41,9 @@
     },
     "telephone": {
       "type": "string"
+    },
+    "URL": {
+      "type": "string"
     }
   }
 }
