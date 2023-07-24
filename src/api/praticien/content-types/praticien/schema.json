@@ -44,6 +44,9 @@
     },
     "URL": {
       "type": "string"
+    },
+    "featured": {
+      "type": "boolean"
     }
   }
 }
